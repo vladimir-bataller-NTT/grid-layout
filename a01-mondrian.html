@@ -9,6 +9,12 @@
       height: 500px;
       width: 500px;
       margin: 1rem auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      /* grid-template-columns: 200px repeat(auto-fill, minmax(70px, 1fr)); */
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-gap: 1rem;
+      border: 1px solid black;
 
     }
     .container > div {
@@ -18,18 +24,23 @@
     }
     .amarillo {
       background-color: yellow;
+      grid-row: 1 / 3;
     }
     .azul {
       background-color: blue;
+      /* grid-column: 2/ 4; */
+      grid-column: span 2;
     }
     .negro {
       background-color: black;
     }
     .verde {
       background-color: green;
+      grid-row: span 2;
     }
     .rojo {
       background-color: red;
+      grid-column: span 2;
     }
   </style>
 </head>
@@ -38,7 +49,7 @@
       <div class="amarillo"></div>
       <div class="azul"></div>
       <div class="negro"></div>
-      <div class="verde"></div>
+      <div class="verde"></div>  
       <div class="rojo"></div>
     </div>
     <p>

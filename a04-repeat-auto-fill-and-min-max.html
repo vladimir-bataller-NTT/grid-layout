@@ -9,6 +9,8 @@
       display: grid;
       /* Colocar todas las columnas que quepan pero con un minimo de 200px  y un máximo de 1fr */
       gap: 1rem;
+      /* grid-template-columns: 50px repeat(auto-fill, minmax(200px, 1fr)) 50px; */
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     .container > div {
       padding: 1rem;
