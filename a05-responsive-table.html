@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Responseve</title>
+  <style>
+    /* Conseguir que para width <= 60rem la tabla se muestre en dos columnas,
+    Donde cada autor ocupará dos filas:
+      - la primera fila con dos columnas con autor y origen
+      - la segunda fila con los premios
+     */
+    .tabla {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      gap: 1rem;
+
+      @media only screen and (width <= 60rem) {
+        
+      }
+    }
+
+    .tabla > div {
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid gainsboro;
+    }
+    .premios {
+      @media only screen and (width <=60rem) {
+        
+      }
+    }
+
+  </style>
+</head>
+<body>
+    <div class="tabla">
+      <div class="actor">Philip Seymour Hoffman</div>
+      <div class="origen">23 de julio de 1967 - Nueva York</div>
+      <div class="premios">
+        <ul>
+          <li>2005 - Capote-Ganador</li>
+          <li>2007 - Charlie Wilson's War - Nominado</li>
+          <li>2008 - La duda -	Nominado</li>
+          <li>2012 - The Master - Nominado</li>
+        </ul>
+      </div>
+      <div class="actor">Robert De Niro</div>
+      <div class="origen">17 de agosto de 1943 - Nueva York</div>
+      <div class="premios">
+        <ul>
+          <li>1975 - El padrino II - Ganador</li>
+          <li>1977 - Taxi Driver - Nominado</li>
+          <li>1979 - The Deer Hunter - Nominado</li>
+          <li>1981 - Toro salvaje - Ganador</li>
+          <li>1991 - Despertares - Nominado</li>
+          <li>1992 - Cape Fear - Nominado</li>
+          <li>2013 - Silver Linings Playbook - Nominado</li>
+          <li>2024 - Los asesinos de la luna - Nominado</li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>

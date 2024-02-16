@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Responseve</title>
+  <style>
+    .container {
+      display: grid;
+      gap: 1rem;
+      grid-template-areas: "amarillo azul azul"
+                           "amarillo negro rojo"
+                           "verde verde rojo";
+      height: 500px;
+      width: 500px;
+      margin: 1rem auto;
+
+    }
+    .container > div {
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    .amarillo {
+      background-color: yellow;
+      grid-area: amarillo;
+    }
+    .azul {
+      background-color: blue;
+      grid-area: azul;
+    }
+    .negro {
+      background-color: black;
+      grid-area: negro;
+    }
+    .verde {
+      background-color: green;
+      grid-area: verde;
+    }
+    .rojo {
+      background-color: red;
+      grid-area: rojo;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="amarillo"></div>
+      <div class="azul"></div>
+      <div class="negro"></div>
+      <div class="verde"></div>
+      <div class="rojo"></div>
+    </div>
+    <p>
+      Agregar las propiedades css para que la el HTML anterior se muestre como la siguiente imagen:
+    </p>
+    <p style="text-align: center;"><img src="img/mondrian.png" alt="Cuadro tipo Mondrian"/></p>
+</body>
+</html>
